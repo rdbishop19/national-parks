@@ -7,9 +7,8 @@ import api from "./api.js"
 import dom from "./dom.js"
 import component from "./components.js"
 
-
 api.getParksLocationData().then((array) => {
-    console.log("parks object", array)
+    // console.log("parks object", array)
     array.forEach((park) => {
         // pass each park object in the array to the createHtml function
         let parkEl = component.createParksHtml(park);

@@ -2,15 +2,19 @@ body {
     background-color: #BAE5F9;
 }
 
-/* 
-If the park has been visited, the article tag should have a red dashed border. 
-If the park has not been visited, it should have a green solid border.
- */
-
 .visited {
     border: 2px solid green;
 }
 
 .unvisited {
     border: 2px dashed red;
+}
+
+.center {
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
 }
