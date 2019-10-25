@@ -1,0 +1,1 @@
+const darkSkyApiKey = "fac84550ce886c571fee67e230e5837e"
