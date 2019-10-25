@@ -12,13 +12,6 @@ api.getParksLocationData().then((array) => {
     console.log("parks object", array)
     array.forEach((park) => {
         // pass each park object in the array to the createHtml function
-        let currently = ""
-        let daily = ""
-        let hourly = ""
-        api.getWeatherData(park).then((results) => {
-            console.log(results);
-
-        });
         let parkEl = component.createParksHtml(park);
         // append card to DOM
         dom.renderParkToDom(parkEl);

@@ -1,3 +1,5 @@
+import api from "./api.js"
+
 const components = {
     createParksHtml(park){
         // console.log("createParksHtml runs successfully")
@@ -5,15 +7,13 @@ const components = {
         // ES6 destructuring to assign variabled based on 'park' object's properties
         const { latitude, longitude, name, state, visited } = park;
         // console.log(latitude, longitude, name, state, visited) // works!
-    
-        /* 
-            For each of the national parks, use the latitude and longitude 
-            to get the weather in that area using this API: https://darksky.net/dev. 
-            From the data coming back from the Dark Sky API, 
-            you are going to use summary listed under currently, hourly and daily. 
-            Change the html so it looks like this:
-         */
-    
+        
+        // api.getWeatherData(park).then(weatherObj => {
+        //     let currently = weatherObj.currently.summary
+        //     let daily = weatherObj.daily.summary
+        //     let hourly = weatherObj.hourly.summary
+        // });
+        // console.log("weather summary", currently, daily, hourly)
         /* 
             <article>
                 <h3>Park Name</h3>
