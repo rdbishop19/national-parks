@@ -21,11 +21,12 @@ const components = {
 		// console.log("headerEl", headerEl)
 
 		const parkLocationStateEl = document.createElement('p');
-		parkLocationStateEl.textContent = state;
+		parkLocationStateEl.innerHTML = `<strong>State:</strong> ${state}`;
 		// console.log(parkLocationStateEl)
 
 		const weatherSummaryHeader = document.createElement('p');
 		const weatherSummaryEl = document.createElement('ul');
+		weatherSummaryEl.id = "weather-summary";
 		const currentWeather = document.createElement('li');
 		const dailyWeather = document.createElement('li');
         const hourlyWeather = document.createElement('li');

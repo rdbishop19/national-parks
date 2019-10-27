@@ -5,6 +5,13 @@ const dom = {
         // console.log(parksContainer)
         // appendChild to parksContainer
         parksContainer.appendChild(htmlElement);
+    },
+    renderPageTitle(){
+        let pageTitleEl = document.createElement("h1")
+        pageTitleEl.id = "title-national-parks"
+        pageTitleEl.className = "center jumbotron";
+        pageTitleEl.textContent = "National Parks Information"
+        document.querySelector("#page-title").appendChild(pageTitleEl);
     }
 }
 

@@ -2,12 +2,31 @@ body {
     background-color: #BAE5F9;
 }
 
+article {
+    min-width: 300px;
+}
+
+.jumbotron {
+    background-color: #C56C39;
+    border: 3px solid #213A1B;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Pacifico', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    text-shadow: 0px 0px 6px black;
+    min-width: 300px;
+}
+
 .visited {
-    border: 2px solid green;
+    border-left: 3px solid #213A1B;
+    background-color: rgba(111, 73, 48, 0.3);
+    border-radius: 10px;
 }
 
 .unvisited {
-    border: 2px dashed red;
+    border-left: 3px dashed red;
+    background-color: rgba(197, 108, 57, 0.3);
+    border-radius: 10px;
 }
 
 .center {
@@ -15,6 +34,20 @@ body {
     text-align: center;
 }
 
+#weather-summary {
+    margin: 0 auto;
+    padding: 0px 40px 20px;
+}
+
 li {
     list-style-type: none;
+}
+
+h3 {
+    font-family: "Pacifico", cursive;
+    text-shadow: 0px 0px 4px rgba(51, 51, 51, 0.295);
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 0px;
 }

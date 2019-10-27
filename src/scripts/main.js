@@ -7,6 +7,8 @@ import api from "./api.js"
 import dom from "./dom.js"
 import component from "./components.js"
 
+dom.renderPageTitle();
+
 api.getParksLocationData().then((array) => {
     // console.log("parks object", array)
     array.forEach((park) => {
